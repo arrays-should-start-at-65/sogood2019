@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)https://duncanw.eu/ -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>A blank page</title>
+	<style>
+	</style></head>
+	
+	<body>
+		<canvas id="myCanvas">This text displays if the user is using a potato</canvas>
+		<button id="button4">I am a button</button>
+		<form>
+			<input id="firstname" type="text">
+			<input type="submit"> 
+		</form>
+		<script>
+
+
+for(var i = 0; i < 10; i++) {
+	innerLoop();
+}
+
+function innerLoop() {
+	// this is a different scope
+	for(i = 0; i < 10; i++) { // i refers to global scope!
+console.log("What if old man Belfield is librocop's  father");
+	}
+}
+
+
+
+/***************************************/
+
+
+
+window.onload = function() {
+
+	 // create a couple of elements 
+
+	 var para = document.createElement("blockquote");
+	 var sum_text = document.createTextNode("Never gonna give you up");
+	 para.appendChild(sum_text);
+	 document.body.appendChild(para);
+}
+
+
+/***************************************/
+
+
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
+ctx.fillStyle='#FF0000';
+ctx.fillRect(0,0,80,100);
+
+
+
+/***************************************/
+
+
+
+var button_variable_name = document.getElementById("button4");
+  button_variable_name.addEventListener("click", function() {
+    console.log("Button was clicked.");
+  });
+
+  
+
+/***************************************/  
+  
+
+var first_name = document.getElementById("firstname");
+first_name.addEventListener("change", howLong);
+
+function howLong() {
+    var p = this.value.length;
+    console.log("Length of input is " + p);
+}
+	</script>
+	<p><a href="https://duncanw.eu/exam.html"> The code used in the midterm </a></p>
+	<p><a href="https://duncanw.eu/responsivedesign.pdf"> Responsive Design Consider<wbr>ations</a></p>
+	<p><a href="https://duncanw.eu/COMP20030_final_lecture.pdf"> Last lecture </a></p>
+	
+<blockquote>Never gonna give you up</blockquote></body></html>
